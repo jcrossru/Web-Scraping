@@ -20,9 +20,85 @@
     <!-- Mars data Listings -->
     <div class="row" id="MarsData-listings">
       <div class="col-md-12">
+        <h3 class="heading">Latest Mars News</h4>
         <h4 class="heading">{{mars_data.news_title}}</h4>
         <small>{{mars_data.news_p}}</small>
       </div>
+      <div class="col-md-8 smallImg">
+        <h3 class="heading">Featured MARS Image</h4>
+        <img src={{mars_data.featured_img}}>
+        <!--img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22574_hires.jpg" alt="Nasa Image" style="width:650px;height:550px;"> -->
+      </div>
+      <div class="col-md-8">
+          <h4 class="heading">MARS Weather</h4>
+          <p>{{mars_data.weather}}</p>
+      </div>
+
+      <div class="col-md-8">
+          <h4 class="heading">MARS Facts</h4>
+          <table style="width:25%">
+          <tr>
+            <th>Description</th>
+             <th>Value</th> 
+           </tr>
+          <tr>
+            <td>Equatorial Diameter: </td>
+             <td>{{mars_data.equatorial_diameter}}</td> 
+           </tr>
+          <tr>
+            <td>Polar Diameter: </td>
+             <td>{{mars_data.polar_diameter}}</td> 
+           </tr>
+           <tr>
+              <td>Mass: </td>
+               <td>{{mars_data.mass}}</td> 
+             </tr>
+            <tr>
+              <td>Moons: </td>
+               <td>{{mars_data.moons}}</td> 
+             </tr>
+            <tr>
+              <td>Orbit Distance: </td>
+               <td>{{mars_data.orbit_distance}}</td> 
+             </tr>
+            <tr>
+              <td>Orbit Period: </td>
+               <td>{{mars_data.orbit_period}}</td> 
+             </tr>
+            <tr>
+              <td>Surface Temperature: </td>
+               <td>{{mars_data.surface_temperature}}</td> 
+             </tr>
+            <tr>
+              <td>First Record: </td>
+               <td>{{mars_data.first_record}}</td> 
+             </tr>
+            <tr>
+              <td>Recorded By: </td>
+               <td>{{mars_data.recorded_by}}</td> 
+             </tr>
+          </table> 
+      </div>
+      <div class="col-md-12">
+          <h3 class="heading">MARS Hemispheres</h4>
+          <!--img src={{mars_data.featured_img}}> -->
+        </div>
+        <div class="col-md-6 smallImg">
+              <img src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg" alt="Nasa Image" style="width:450px;height:450px;">
+              <h4 class="heading">Valles Marineris Hemisphere</h4>
+            </div>
+            <div class="col-md-6 smallImg">
+                 <img src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg" alt="Nasa Image" style="width:450px;height:450px;">
+              <h4 class="heading">Cerberus Hemisphere</h4>
+            </div>
+            <div class="col-md-6 smallImg">
+                <img src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg" alt="Nasa Image" style="width:450px;height:450px;">
+              <h4 class="heading">Schiaparelli Hemisphere</h4>
+            </div>
+            <div class="col-md-6 smallImg">
+                  <img src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg" alt="Nasa Image" style="width:450px;height:450px;">
+              <h4 class="heading">Syrtis Major Hemisphere</h4>
+        </div>
     </div>
   </div>
 </body>
